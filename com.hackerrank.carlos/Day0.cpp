@@ -1,4 +1,4 @@
-#include <iostream>;
+#include <iostream>
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main(){
     string message;
 
     // Read a text from console
-    cin >> message;
+    getline(cin, message);
 
     // Print a message on console
     cout << message;
