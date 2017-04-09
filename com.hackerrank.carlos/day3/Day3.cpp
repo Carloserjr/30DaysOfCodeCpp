@@ -21,7 +21,7 @@
 #include <algorithm>
 using namespace std;
 
-/*
+/**
  * Objective
  * In this challenge, we're getting started with conditional statements. Check out the Tutorial tab for learning
  * materials and an instructional video!

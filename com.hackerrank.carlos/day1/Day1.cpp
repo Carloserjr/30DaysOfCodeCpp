@@ -4,7 +4,7 @@
 
 using namespace std;
 
-/*
+/**
  * Objective
  * Today, we're discussing data types. Check out the Tutorial tab for learning materials and an instructional video!
  *
