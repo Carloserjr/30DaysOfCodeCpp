@@ -63,31 +63,31 @@ using namespace std;
 int main(){
     int n;
     cin >> n;
-    int div, sequence, rest, max1InSequence, previous = -1;
-    sequence = max1InSequence = rest = 0;
+    int div, sequence, mod, max1InSequence, previous = -1;
+    sequence = max1InSequence = 0;
     div = n;
 
     do {
-        rest = div%2;
+        mod = div%2;
 
         if (previous == -1){
-            previous = rest;
+            previous = mod;
         }
 
-        if (rest == 1) {
+        if (mod == 1) {
             sequence++;
         }
 
-        div = div/2;
+        div /= 2;
 
-        if((rest != 1 && previous == 1) || div <= 0){
+        if((mod != 1 && previous == 1) || div <= 0){
             if(sequence > max1InSequence) {
                 max1InSequence = sequence;
             }
             sequence = 0;
         }
 
-        previous = rest;
+        previous = mod;
     } while(div > 0);
 
     cout << max1InSequence << endl;
