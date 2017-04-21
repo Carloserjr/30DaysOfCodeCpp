@@ -3,5 +3,5 @@ project(30DaysOfCodeCpp)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES com.hackerrank.carlos/day15/Day15.cpp)
+set(SOURCE_FILES com.hackerrank.carlos/day16/Day16.cpp)
 add_executable(30DaysOfCodeCpp ${SOURCE_FILES})
