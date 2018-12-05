@@ -28,7 +28,7 @@ int main() {
     }
 
     string name;
-    while(cin >> name) {
+    while(cin >> name ) {
         if (phoneBook.find(name) != phoneBook.end()) {
             cout << name << "=" << phoneBook.find(name)->second << endl;
         } else {
