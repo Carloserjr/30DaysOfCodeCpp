@@ -1,10 +1,34 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
 class Solution {
     //Write your code here
+    public:
+        vector<char> queue;
+        vector<char> stack;
 
+    void pushCharacter(char c) {
+        stack.push_back(c);
+    }
+
+    void enqueueCharacter(char c) {
+        queue.push_back(c);
+    }
+
+    char popCharacter() {
+        char c = stack.back();
+        stack.pop_back();
+
+        return c;
+    }
+
+    char dequeueCharacter() {
+        char c = queue.at(0);
+        queue.erase(queue.begin());
+        return c;
+    }
 };
 
 int main() {
