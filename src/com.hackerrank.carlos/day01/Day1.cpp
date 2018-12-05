@@ -1,7 +1,6 @@
 #include <iostream>
 #include <iomanip>
 #include <limits>
-#include "string"
 
 using namespace std;
 
@@ -29,7 +28,7 @@ int main(){
     cout << (myInt + i) << endl;
 
     // Print the sum of the double variables on a new line.
-    // cout.precision(1)
+    cout.precision(1);
     cout << fixed << (myDouble + d) << endl;
 
     // Concatenate and print the String variables on a new line
